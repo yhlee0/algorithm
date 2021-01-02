@@ -1,8 +1,8 @@
 '''
 **Info**
 	GitHub name : yhlee0 (fresh2816@naver.com)
-	Subject : JumpToPyhton5_3.py : class
-	URL : https://blog.naver.com/fresh2816/222193132690
+	Subject : JumpToPyhton5_4.py : class
+	URL : https://blog.naver.com/fresh2816/222194014922
 	
 '''
 
