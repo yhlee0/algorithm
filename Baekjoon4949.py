@@ -7,22 +7,22 @@
 
 
 while True:
-  stack = []
-  s = input
-  if s == ".":
-    break
-  for word in s:
-    if word in "[(":
-      stack.append(word) 
-    elif word in "])":
-      if len(stack) > 0 and stack[-1] == "(" and word ==")":
-        stack.pop()
-      elif len(stack) > 0 and stack[-1] =="[" and word == "]":
-        stack.pop()
-      else:
-        stack = [None]
+    stack = []
+    sentence = input()
+    if sentence == ".":
         break
-  if len(stack) > 0:
-    print("no")
-  else:
-    print("yes")
+    for word in sentence:
+        if word in "[(":
+            stack.append(word)
+        elif word in "])":
+            if len(stack) > 0 and stack[-1] == "(" and word == ")":
+                stack.pop()
+            elif len(stack) > 0 and stack[-1] == "[" and word == "]":
+                stack.pop()
+            else:
+                stack = [None]
+                break
+    if len(stack) > 0:
+        print("no")
+    else:
+        print("yes")
